@@ -13,7 +13,7 @@ router.post('/login', usersController.login);
 router.get('/', usersController.findAll);
 
 
-router.get('/{id}', usersController.findOne);
+router.get('/:id', usersController.findOne);
 
 
 router.patch('/{id_groupe}', usersController.UserToGroup);

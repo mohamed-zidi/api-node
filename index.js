@@ -29,6 +29,7 @@ const errorHandler = error => {
 
 server.on('error', errorHandler);
 
+app.use(express.json());
 app.use('/users',UsersRouter);
 app.use('/groups',GroupsRouter);
 
